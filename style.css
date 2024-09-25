@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, #000c4efe, #016283) ;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+main {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  height: 100vh;
+  width: 100vw;
+}
+
+#slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+    width: 100vw;
+}
+
+.pg {
+    min-width: 100vw;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+#titulo {
+    width: 100%;
+    max-width: 520px;
+    font-size: 25px;
+    margin-left: 0vw;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+#principal {
+    background-image: url("fundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#plano {
+    width: 300px;
+    margin-left: 200px;
+}
+
+#botao1, #botao2 {
+    border-radius: 40px;
+    padding: 1em;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 250px;
+    margin-top: 20px;
+    transition: 0.4s;
+    justify-content: center;
+}
+
+#botao1 {
+    background-color: #D70A14;
+    border: solid 2px #86070e;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+#botao2 {
+    background-color: #00A4A2;
+    border: solid 2px #006463;
+    color: white;
+    margin-left: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#botao1:hover, #botao2:hover{
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+#botao1:hover {
+    background-color: #610509;
+}
+
+#botao2:hover {
+    background-color: #004d4b;
+}
+
+#aviso {
+    color: white;
+    font-size: 15px;
+    margin-left: 125px;
+    float: left;
+}
+
+footer{
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    bottom: 4.5px;
+    text-align: center;
+    width: 100vw;
+}
+
+spam{
+    font-weight: bold;
+    color: #0051ff;
+}
+
+spam:hover{
+    color: #308BD5;
+}
+
+.tiposdeprodutostitulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tiposdeproduto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+
+.produtos {
+    background-color: #99E1D9;
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.produtos-img {
+    width: 150px;
+    height: auto;
+    transform: scale(0.9);
+    flex-basis: 150px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.produtos-info {
+    flex-grow: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.titulo-info {
+    font-size: 30px;
+    color: black;
+    margin-left: 15px;
+}
+
+.descricao-info {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 2em;
+}
+
+.valor {
+    font-size: 20px;
+    color: #49AB5D;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.preco{
+    color: #1bb039;
+}
+
+.preco:hover{
+    color: #266031;
+
+}
+
+hr{
+    height: 2px;
+    background-color: #000;
+}
+
+.game{
+    float: right  !important;
+    margin-right: 50px;
+    width: 40hw;
+}
+
+#pg3 {
+    padding: 10px;
+}
+
+#img2 {
+    width: 300px;
+    float: inline-start;
+    margin: 0 20px 20px 0;
+}
+
+.titi{
+    font-size: 40px;
+}
